@@ -1,0 +1,42 @@
+…o crear un nuevo repositorio en la línea de comando
+
+echo "# Project02_CalculatorApp" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/joseluisprogramador/Project02_CalculatorApp.git
+git push -u origin main
+
+…o enviar un repositorio existente desde la línea de comando
+
+git remote add origin https://github.com/joseluisprogramador/Project02_CalculatorApp.git
+git branch -M main
+git push -u origin main
+
+
+
+
+
+
+
+SUSCRIBIR UN METODO : "Subscribir un método" en el contexto de eventos en programación
+significa asociar ese método a un evento específico. En términos más sencillos, estás diciendo al programa
+que ejecute ese método cuando ocurra un evento particular.
+     
+
+Cuando asignas un manejador de eventos, como en Btn_0.Click += AddNumber;,
+el método AddNumber se convierte en el controlador de eventos para el 
+evento Click del botón Btn_0. Cuando se hace clic en el botón Btn_0, el sistema de eventos de .NET
+invoca el método AddNumber y pasa automáticamente el objeto que generó el evento como 
+argumento al parámetro sender.
+En este caso, como has asociado AddNumber al evento Click de Btn_0, cuando se hace clic en Btn_0,
+sender será una referencia al objeto Btn_0.
+Cuando realizas el casting con la línea Button oButton = (Button)sender;, 
+estás diciendo al compilador que confíe en ti y asumas que el objeto al que apunta sender es
+realmente un objeto de tipo Button. Esto es seguro hacerlo en este contexto porque sabes que
+estás trabajando con botones y que el evento Click proviene de un botón.
+Entonces, después del casting, oButton es una referencia al objeto Btn_0 (o al botón correspondiente, 
+dependiendo de cuál haya disparado el evento). Por lo tanto, puedes acceder a las propiedades
+del botón, como oButton.Text, para obtener el texto del botón que se hizo clic.
+ 

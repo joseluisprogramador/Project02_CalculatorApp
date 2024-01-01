@@ -49,13 +49,16 @@
     <Compile Include="Class_Operations\Class_OperationAdition.cs" />
     <Compile Include="Class_Operations\Class_OperationDivision.cs" />
     <Compile Include="Class_Operations\Class_OperationMultiplication.cs" />
+    <Compile Include="Class_Operations\Class_OperationSquareRoot.cs" />
     <Compile Include="Class_Operations\Class_OperationSubtraction.cs" />
+    <Compile Include="Class_Operations\Class_RaizerExponent.cs" />
     <Compile Include="Form_Calculator.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form_Calculator.Designer.cs">
       <DependentUpon>Form_Calculator.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interface_Operations\Interface_BasicOperations.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form_Calculator.resx">
@@ -96,5 +99,6 @@
   <ItemGroup>
     <None Include="Resources\Img_SignMultiplication.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,14 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace Project_Main.Class_Operations
 {
-    public class Class_OperationAdition : Interface_BasicOperations
+    public class Class_OperationSquareRoot : Interface_BasicOperations
     {
         public double Operations(double FirstNumber, double SecondNumber)
         {
-            return FirstNumber + SecondNumber ;
+            return Math.Sqrt(FirstNumber);
         }
     }
 }

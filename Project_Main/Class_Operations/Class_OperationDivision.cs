@@ -1,18 +1,26 @@
-﻿using System;
+﻿using Project_Main.Interface_Operations;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Project_Main.Class_Operations
 {
-    public class Class_OperationDivision
+    public class Class_OperationDivision : Interface_BasicOperations
     {
-        public double Division(double firsNumber, double secondNumber)
+        public double Operations(double FirstNumber, double SecondNumber)
         {
-            double operation = firsNumber / secondNumber;
-
-            return operation;
-        }
+            if (SecondNumber != 0)
+            {
+                return FirstNumber / SecondNumber;
+            }
+            else
+            {           
+                return 0 ;
+            }
+          
+        }  
     }
 }
